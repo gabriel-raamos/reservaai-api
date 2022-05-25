@@ -31,9 +31,9 @@ db.cli_cliente.hasMany(db.res_reserva, {
   }
 })
 
-db.res_reserva.hasOne(db.pag_pagamento, {
+db.pag_pagamento.hasOne(db.res_reserva, {
   foreignKey: {
-    name: 'res_id',
+    name: 'pag_id',
     type: Sequelize.INTEGER,
     allowNull: false,
     onUpdate: 'CASCADE',
@@ -41,9 +41,9 @@ db.res_reserva.hasOne(db.pag_pagamento, {
   }
 })
 
-db.res_reserva.hasOne(db.aco_acomodacao, {
+db.aco_acomodacao.hasOne(db.res_reserva, {
   foreignKey: {
-    name: 'res_id',
+    name: 'aco_id',
     type: Sequelize.INTEGER,
     allowNull: false,
     onUpdate: 'CASCADE',
@@ -71,9 +71,9 @@ db.pro_proprietario.hasMany(db.aco_acomodacao, {
   }
 })
 
-db.aco_acomodacao.hasOne(db.com_comodidade, {
+db.com_comodidade.hasMany(db.aco_acomodacao, {
   foreignKey: {
-    name:'aco_id',
+    name:'com_id',
     type: Sequelize.INTEGER,
     allowNull: false,
     onUpdate: 'CASCADE',

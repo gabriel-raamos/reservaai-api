@@ -1,12 +1,11 @@
 const db = require('../models');
 const Reserva = db.res_reserva;
-const Op = db.Sequelize.Op;
 
 exports.create = (req,res) => {
     
     if (!req.body.res_id) {
         res.status(400).send({
-            message: 'o conteudo nao pode ser vazio'
+            message: 'O conteúdo não pode ser vazio.'
         })
         return;
     }
@@ -16,7 +15,9 @@ exports.create = (req,res) => {
         res_status: req.body.res_status,
         res_dt_checkin: req.body.res_dt_checkin,
         res_dt_checkout: req.body.res_dt_checkout,
-        cli_id: req.body.cli_id
+        cli_id: req.body.cli_id,
+        pag_id: req.body.pag_id,
+        aco_id: req.body.aco_id
     }
 
     Reserva.create(reserva)

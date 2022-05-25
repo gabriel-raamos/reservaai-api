@@ -13,6 +13,11 @@ app.get('/', (req,res) => {
 
 require('./app/routes/cli_cliente.route')(app)
 require('./app/routes/res_reserva.route')(app)
+require('./app/routes/pag_pagamento.route')(app)
+require('./app/routes/pro_proprietario.route')(app)
+require('./app/routes/aco_acomodacao.route')(app)
+require('./app/routes/com_comodidade.route')(app)
+require('./app/routes/end_endereco.route')(app)
 
 app.listen(port, () => {
     console.log(`estamos rodando na porta ${port}`);

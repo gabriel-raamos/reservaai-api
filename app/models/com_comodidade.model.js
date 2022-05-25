@@ -8,53 +8,43 @@ module.exports = (sequelize,Sequelize) => {
         },
 
         com_aquecimento: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN            
         },
 
         com_resfriamento: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN            
         },
 
         com_churrasqueira: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN            
         },
 
         com_fogao: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN            
         },
 
         com_geladeira: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN            
         },
 
         com_maquina: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN            
         },
 
         com_televisao: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN            
         },
 
         com_wifi: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN            
         },
 
         com_piscina: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN            
         },
 
         com_pet_friendly: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN            
         }
     },
     {

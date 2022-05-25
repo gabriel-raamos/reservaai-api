@@ -1,13 +1,12 @@
 const { res_reserva } = require('../models');
 const db = require('../models');
 const Cliente = db.cli_cliente;
-const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
 
     if (!req.body.cli_id) {
         res.status(400).send({
-            message: 'o conteudo nao pode ser vazio'
+            message: 'O conteúdo não pode ser vazio.'
         })
         return;
     }
@@ -27,7 +26,7 @@ exports.create = (req, res) => {
         })
         .catch(err => {
             res.status(500).send({
-                message: err.message || 'deu ruim'
+                message: err.message || "deu ruim"
             })
         })
 

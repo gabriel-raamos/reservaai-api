@@ -1,0 +1,58 @@
+{
+    "cli_id": "0",
+    "cli_nome": "gabriel",
+    "cli_dt_nasc": "2002-05-13",
+    "cli_cpf": "12345678900",
+    "cli_email": "ga@bri.el",
+    "cli_senha": "123456"
+}
+
+{
+    "res_id": "0",
+    "res_status": "true",
+    "res_dt_checkin": "2022-05-30",
+    "res_dt_checkout": "2022-06-05",
+    "cli_id": 1
+}
+
+{
+    "pag_id": 1,
+    "pag_valor": "125.00",
+    "pag_tipo_pagamento": "credito",
+    "pag_dt_pagamento": "2020-05-30T00:00:00.000Z"
+}
+
+{
+    "pag_id": 2,
+    "pag_valor": "125.00",
+    "pag_tipo_pagamento": "débito",
+    "pag_dt_pagamento": "2020-05-30T00:00:00.000Z"
+}
+
+{
+    "pag_id": 3,
+    "pag_valor": "125.00",
+    "pag_tipo_pagamento": "debito",
+    "pag_dt_pagamento": "2020-05-30T00:00:00.000Z"
+}
+
+{
+    "res_id": "0",
+    "res_status": "true",
+    "res_dt_checkin": "2020-06-02",
+    "res_dt_checkout": "2020-06-08",
+    "cli_id": 1,
+    "pag_id": 2,
+    "aco_id": 1
+}
+
+{
+    "pro_id": "0",
+    "pro_nome": "marcel",
+    "pro_dt_nascimento": "2002-12-30",
+    "pro_cpf": "98765432100",
+    "pro_email": "marcel@metalgear.com",
+    "pro_senha": "987654"
+}
+
+`Ocorreu um problema inesperado ${err}`
